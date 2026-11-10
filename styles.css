@@ -10,14 +10,13 @@
 
 * { box-sizing: border-box; }
 
-html { min-width: 320px; background: #a9daf7; }
+html { min-width: 320px; background: #f1f3f6; }
 
 body {
   margin: 0;
   color: var(--ink);
   background:
-    radial-gradient(circle at 79% 8%, rgba(255, 255, 255, .48) 0 4%, transparent 14%),
-    linear-gradient(180deg, #72bff1 0%, #a9dcf8 38%, #dff3ff 72%, #f7fcff 100%);
+    linear-gradient(180deg, #ffffff 0%, #f8f9fb 46%, #eef1f4 100%);
   font-family: "Cairo", "Segoe UI", Tahoma, sans-serif;
   min-height: 100vh;
   overflow-x: hidden;
@@ -49,10 +48,9 @@ body::before {
   width: 94px;
   height: 94px;
   margin-bottom: 14px;
-  padding: 4px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #ffffff, #cfd9e8);
   box-shadow: 0 10px 22px rgba(37, 54, 86, .13);
+  overflow: hidden;
 }
 
 .avatar {
@@ -124,7 +122,7 @@ h1 {
 .link-card {
   position: relative;
   display: grid;
-  grid-template-columns: 70px 1fr 26px;
+  grid-template-columns: 70px 1fr;
   align-items: center;
   gap: 15px;
   min-height: 102px;
@@ -159,6 +157,7 @@ h1 {
 .youtube-card { --accent: #ff0033; }
 .tiktok-card { --accent: #0f1114; }
 .facebook-card { --accent: #1877f2; }
+.instagram-card { --accent: #e4405f; }
 
 .platform-art {
   position: relative;
@@ -209,7 +208,7 @@ h1 {
 
 @media (max-width: 390px) {
   .page-shell { padding-inline: 15px; }
-  .link-card { grid-template-columns: 62px 1fr 22px; gap: 12px; min-height: 94px; padding-right: 12px; }
+  .link-card { grid-template-columns: 62px 1fr; gap: 12px; min-height: 94px; padding-right: 12px; }
   .platform-art { width: 62px; height: 62px; border-radius: 18px; }
   .card-copy small { font-size: 10px; }
 }
