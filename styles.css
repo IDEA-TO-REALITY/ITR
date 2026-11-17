@@ -158,6 +158,7 @@ h1 {
 .tiktok-card { --accent: #0f1114; }
 .facebook-card { --accent: #1877f2; }
 .instagram-card { --accent: #e4405f; }
+.website-card { --accent: #6c5ce7; }
 
 .platform-art {
   position: relative;
